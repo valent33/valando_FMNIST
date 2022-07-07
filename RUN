@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Compiling..."
+
+g++ -Wall -g -Ofast -Wextra ./src/activation.cpp ./src/init.cpp ./src/iostreams.cpp ./src/main.cpp ./src/matrix.cpp ./src/network.cpp ./src/utils.cpp -o network -lm -fopenmp
+
+echo "Compilation done."
+
+echo "Running..."
+echo "######################################################## RUNNING ########################################################"
+
+./network
